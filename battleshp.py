@@ -53,3 +53,25 @@ while True:
 print(f"You have chosen: {character}")
 print(f"Your HP: {my_hp}")
 print(f"Your Damage: {my_damage}")
+
+# Task 4: Battle with the Dragon
+
+while True:
+    dragon_hp = dragon_hp - my_damage
+    print("\nThe", character, "damaged the Dragon!")
+    print("Dragon's HP is now:", dragon_hp)
+
+    # Check if the dragon has been defeated
+    if dragon_hp <= 0:
+        print("The Dragon has been defeated! You win!")
+        break  # End the battle loop
+
+    # Dragon attacks the player
+    my_hp = my_hp - dragon_damage
+    print("The Dragon strikes back!")
+    print(character, "'s HP is now:", my_hp)
+
+    # Check if the player has been defeated
+    if my_hp <= 0:
+        print("You have been defeated! The Dragon wins!")
+        break  
