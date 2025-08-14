@@ -29,3 +29,28 @@ def show_options():
 
 show_options()
 choice = input("Enter the number of your choice: ")
+
+# Task 3: Validate Player Choice and Assign Character Stats
+while True:
+    if choice == '1':
+        character = wizard
+        my_hp = wizard_hp
+        my_damage = wizard_damage
+        break
+    elif choice == '2':
+        character = elf
+        my_hp = elf_hp
+        my_damage = elf_damage
+        break
+    elif choice == '3':
+        character = human
+        my_hp = human_hp
+        my_damage = human_damage
+        break
+    else:
+        print("Unknown character")
+        choice = input("Choose your character: ")
+
+print(f"You have chosen: {character}")
+print(f"Your HP: {my_hp}")
+print(f"Your Damage: {my_damage}")
