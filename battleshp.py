@@ -30,7 +30,6 @@ def show_options():
 show_options()
 choice = input("Enter the number of your choice: ")
 
-# Task 3: Validate Player Choice and Assign Character Stats
 while True:
     if choice == '1':
         character = wizard
